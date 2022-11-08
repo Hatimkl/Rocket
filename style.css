@@ -1,0 +1,317 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@400;500&family=Ubuntu:wght@400;500&display=swap");
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: green;
+  scroll-snap-type: x mandatory;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  display: flex;
+  position: relative;
+}
+.navbar {
+  position: fixed;
+  min-width: 100px;
+  height: 100vh;
+  display: block;
+  background-color: #22252d;
+  z-index: 10;
+}
+.navbar h1 {
+  color: #ffffff;
+  padding-left: 3px;
+  margin-bottom: 0;
+}
+.navbar img {
+  padding-top: 10px;
+  width: 110px;
+}
+ul {
+  font-weight: 400;
+  font-size: large;
+  font-family: "Ubuntu", sans-serif;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-left: 3px;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+li {
+  box-shadow: inset 0 0 0 0 #9300cf;
+  color: #ffffff;
+  margin: 0 -0.25rem;
+  padding: 0 0.25rem;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+li:hover {
+  cursor: pointer;
+  box-shadow: inset 100px 0 0 0 #9300cf;
+  color: rgb(0, 0, 0);
+}
+.section-one,
+.section-three,
+.section-four {
+  font-family: "Kanit", sans-serif;
+  flex: none;
+  scroll-snap-align: start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100vw - 100px);
+  height: 100vh;
+  scroll-margin-left: 100px;
+}
+.section-one {
+  background-image: url(/images/19373.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  width: 100vw;
+}
+.section-two {
+  flex: none;
+  font-family: "Kanit", sans-serif;
+  background-image: url(/images/plane.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: calc(100vw - 100px);
+  height: 100vh;
+  scroll-margin-left: 100px;
+  scroll-snap-align: start;
+}
+
+.section-three {
+  background-color: #262931;
+}
+
+.section-four {
+  background-color: #22252d;
+}
+.wlapper__one__text {
+  max-width: 500px;
+}
+.wlapper__one__text h1 {
+  font-size: 50px;
+}
+.wlapper__one__text p {
+  font-size: 20px;
+  color: #000000;
+}
+.wlapper__one__button button {
+  color: white;
+  font-size: 15px;
+  width: 120px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+.wlapper__one__button button:nth-child(1) {
+  background-color: #9300cf;
+  border: none;
+  margin-right: 30px;
+}
+.wlapper__one__button button:nth-child(2) {
+  background: transparent;
+  border-color: #9300cf;
+}
+.wlapper__one__button button:nth-child(2):hover {
+  background-color: #9300cf;
+  border: none;
+}
+.wlapper__two__h1 {
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  padding-top: 10px;
+}
+.wlapper__two__h1 h1 {
+  padding-right: 50px;
+  font-size: 50px;
+  z-index: 2;
+}
+.wlapper__two__h1 p {
+  max-width: 400px;
+  padding-top: 60px;
+  z-index: 2;
+}
+.wlapper__two__comp {
+  display: flex;
+  padding: 0 80px;
+  padding-top: 100px;
+  justify-content: space-between;
+}
+.comp_text h1 {
+  color: #131313;
+}
+.comp_text h1:nth-child(2) {
+  color: #9300cf;
+}
+.comp_text p {
+  color: #ffffff;
+}
+.comp_text {
+  perspective: 1000px;
+  margin-top: 80px;
+  padding-top: 30px;
+  padding-left: 20px;
+  max-width: 200px;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.wlapper__comp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+.first_h1 {
+  color: #ffffff;
+  font-size: 40px;
+}
+.wlapper__three {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.wlapper__three_text {
+  max-width: 300px;
+  color: #ffffff;
+}
+.wlapper__three_img img {
+  width: 150px;
+}
+.buttons_three {
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  padding-top: 460px;
+}
+.buttons_three button {
+  border: none;
+  width: 20px;
+  height: 7px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.active {
+  background-color: #9300cf;
+}
+.container__two {
+  color: #ffffff;
+  display: flex;
+  width: 100vw;
+  height: 58vh;
+  justify-content: center;
+  margin-top: 350px;
+  border-top: solid 2px #9300cf;
+  background-color: #131313;
+  gap: 100px;
+}
+.compentent__one img {
+  width: 150px;
+}
+
+@media only screen and (max-width: 1171px) {
+  .container {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    min-width: 100px;
+    height: 20vh;
+    background-color: #22252d;
+    z-index: 10;
+  }
+  .navbar ul {
+    font-weight: 400;
+    font-size: large;
+    font-family: "Ubuntu", sans-serif;
+    list-style: none;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  .navbar h1 {
+    margin-top: 0;
+  }
+  .navbar img {
+    padding-top: 10px;
+    width: 80px;
+    margin-top: 0;
+  }
+  .section-one,
+  .section-three,
+  .section-two,
+  .section-four {
+    font-family: "Kanit", sans-serif;
+    flex: none;
+    scroll-snap-align: start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+  }
+  .wlapper__two__comp {
+    display: flex;
+    gap: 20px;
+  }
+  .comp_text {
+    margin-top: 60px;
+    padding-top: 10px;
+    padding-left: 20px;
+    max-width: 150px;
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  .wlapper__two__h1 h1 {
+    font-size: 2em;
+  }
+  .wlapper__two__h1 p {
+    padding-top: 1.3rem;
+  }
+  .comp_text h1 {
+    font-size: 15px;
+  }
+  .comp_text p {
+    font-size: 10px;
+  }
+  .wlapper__comp {
+    max-width: 80vh;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .container__two {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
