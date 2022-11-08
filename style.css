@@ -70,7 +70,7 @@ li:hover {
   scroll-margin-left: 100px;
 }
 .section-one {
-  background-image: url(/images/19373.jpg);
+  background-image: url(19373.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   color: #ffffff;
@@ -79,7 +79,7 @@ li:hover {
 .section-two {
   flex: none;
   font-family: "Kanit", sans-serif;
-  background-image: url(/images/plane.jpg);
+  background-image: url(plane.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   width: calc(100vw - 100px);
