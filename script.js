@@ -16,7 +16,7 @@ function changeOne() {
   rightH1.style.color = "#ffffff";
   rightP1.textContent =
     "Direct repair of aneurysm, pseudoaneurysm,or excision (partial or totoal) and graft insertion.";
-  mdlImg.src = "/images/telescope.png";
+  mdlImg.src = "telescope.png";
 }
 buttonOne.addEventListener("click", changeOne);
 
@@ -29,6 +29,6 @@ function changeTwo() {
   rightH1.textContent = "Get The Experience Of Exploring The Universe";
   rightH1.style.color = "#9300cf";
   rightP1.textContent = "";
-  mdlImg.src = "/images/helmet.png";
+  mdlImg.src = "helmet.png";
 }
 buttonTwo.addEventListener("click", changeTwo);
